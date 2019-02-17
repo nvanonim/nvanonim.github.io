@@ -45,14 +45,14 @@ p {
 }
 
 #name h2 {
-	font-size: 1.8em;
+	font-size: 1.6em;
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
 	margin-left: 2px;
 	font-weight: lighter;
 }
 
 #self {
-	width: 15.5%;
+	width: 13.5%;
 	float: left;
 	margin-right: 25px;
 	margin-left: 10px;
