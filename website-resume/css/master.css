@@ -251,6 +251,8 @@ section:last-child {
 		-moz-column-count:2;
 		-webkit-column-count:2;
 		column-count:2;
+		list-style-type: disc;
+		margin-left: -10px
 	}
 }
 
@@ -272,6 +274,7 @@ section:last-child {
 	-moz-column-count:1;
 	-webkit-column-count:1;
 	column-count:1;
+	list-style-type: disc;
 	}
 
 	#name h1 {
