@@ -1,0 +1,165 @@
+@import url("fonts.css");
+@import url("fontello/css/fontello.css");
+@import url("font-awesome/css/font-awesome.min.css");
+
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #fff;
+	font-family: 'opensans-bold', sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+	color: #fff;
+}
+
+* {
+  box-sizing:border-box;
+}
+
+#nav-wrap ul, #nav-wrap li, #nav-wrap a {
+	 margin: 0;
+	 padding: 0;
+	 border: none;
+	 outline: none;
+}
+
+/* nav-wrap */
+#nav-wrap {
+   font: 1em 'opensans-bold', sans-serif;
+   width: 100%;
+   text-transform: uppercase;
+   letter-spacing: 2.5px;
+   margin: 0 auto;
+   z-index: 100;
+   position: fixed;
+   left: 0;
+   top: 15px;
+}
+.opaque { background-color: #333; }
+
+ul#nav {
+  min-height: 48px;
+  width: auto;
+  text-align: center;
+}
+ul#nav li {
+  position: relative;
+  list-style: none;
+  height: 48px;
+  display: inline-block;
+}
+
+ul#nav li a {
+  display: inline-block;
+  padding: 8px 13px;
+  line-height: 32px;
+	text-decoration: none;
+  text-align: left;
+  color: #fff;
+	-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
+}
+
+ul#nav li a:active {
+  background-color: transparent !important;
+}
+
+ul#nav li.current a {
+  color: #d45b0b;
+}
+
+.section {
+  padding: 435px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+#header-overlay {
+  background: url(../img/bg.jpg) no-repeat center bottom fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: table;
+	position: absolute;
+  opacity: 0.9;
+}
+
+#header {
+	display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#header h1 {
+  font-size: 3.5em;
+  margin-top: 3px;
+  font-weight: bold;
+  line-height: 1.071;
+	max-width: 900px;
+	margin-top: 0;
+	margin-bottom: .6rem;
+	margin-left: auto;
+	margin-right: auto;
+	text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  filter: 0;
+  -webkit-filter: 0;
+}
+
+#intro span {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+#intro span::after {
+	content: "|";
+	text-align: center;
+	display: inline-block;
+	padding: 0 8px 0 14px;
+	color: rgba(255, 255, 255, 0.3);
+}
+#intro span:first-child::before {
+	content: "|";
+	text-align: center;
+	display: inline-block;
+	padding: 0 14px 0 8px;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.social {
+   margin: 24px 0;
+   padding: 0;
+   font-size: 30px;
+   text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
+}
+
+.social li {
+   display: inline-block;
+   margin: 0 15px;
+   padding: 0;
+}
+
+.social li a {
+  color: #fff;
+}
+
+.social li a:hover {
+  color: #11ABB0;
+}
