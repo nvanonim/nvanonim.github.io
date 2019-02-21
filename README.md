@@ -1,3 +1,4 @@
-# nvanonim.github.io
+# **Alghifari TN**
 Get to know me - Alghifari TN
-resume: nvanonim.github.io/website-resume
+> [Website](https://nvanonim.github.io)
+> [Resume](https://nvanonim.github.io/website-resume)
