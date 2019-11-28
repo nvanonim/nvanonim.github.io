@@ -1,0 +1,692 @@
+@import url("bootstrap.min.css");
+@import url("fonts.css");
+@import url("fontello/css/fontello.css");
+@import url("font-awesome/css/font-awesome.min.css");
+
+html {
+  overflow: hidden;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 24px;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'opensans', sans-serif;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  min-height: 100%;
+  scroll-snap-align: start;
+}
+
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #F9B42D;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  position: relative;
+  background-color: #79A19A;
+  color: white;
+  margin: auto;
+  padding: 16px;
+  font-size: 16px;
+  left: 56px;
+  top: 0px;
+  width: 84px;
+  height: 48px;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  margin-top: -5px;
+}
+
+.dropbtn img {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  right: 12px;
+  top: calc(50% - 5px/2);
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #7ac2b5;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown.transparent {
+  position: fixed;
+  display: inline-block;
+  z-index: 9999;
+  border-width: 0px;
+  -webkit-box-shadow: 0px 0px;
+  box-shadow: 0px 0px;
+  background-color: rgba(0,0,0,0.0);
+  background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+  background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+  background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  font-size: 16px;
+  left: 56px;
+  background-color: #f1f1f1;
+  min-width: 166px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #F9B42D;
+  color: white;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display:block;
+}
+
+/*****************************************/
+
+.row {
+  width: 100%;
+  max-width: 100%;
+}
+
+/**
+* Home Section
+**/
+
+.home {
+  background: url(../img/bg.jpg), center center no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#intro {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+
+#intro h1{
+  font-family: 'opensans-bold', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 60px;
+  letter-spacing: 0.025em;
+  text-transform: capitalize;
+  color: #ECECEC;
+  margin: -7px auto;
+
+	text-shadow: 0 0 15px rgba(#16A085, 0.5);
+  filter: 0;
+  -webkit-filter: 0;
+}
+
+#intro span {
+  font-size: 0.7rem;
+  margin: -7px auto;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: white;
+}
+
+#intro span::after {
+	content: "|";
+	text-align: center;
+	display: inline-block;
+	padding: 0 8px 0 14px;
+	color: rgba(255, 255, 255, 0.3);
+}
+#intro span:first-of-type::before {
+	content: "|";
+	text-align: center;
+	display: inline-block;
+	padding: 0 14px 0 8px;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+#intro hr {
+  width: 65%;
+  border: 1px solid #ECECEC;
+  border-style: inset;
+  margin: 12px auto;
+}
+
+#arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/**
+* About Section
+**/
+
+.about {
+  margin: 0 auto;
+  background-color: #ECECEC;
+  align-items: center;
+  display: flex;
+}
+
+.about h2 {
+  text-transform: uppercase;
+  font-family: 'opensans-bold';
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 33px;
+  letter-spacing: 0.15em;
+  color: #F9B42D;
+}
+
+.about h3 {
+  color: #79A29A;
+  font-family: 'opensans-semibold';
+  font-weight: bold;
+  font-size: 1.35rem;
+  line-height: 44px;
+}
+
+.about h4 {
+  font-size: 1rem;
+  line-height: 33px;
+  font-weight: lighter;
+  color: #79A19A;
+  text-transform: uppercase;
+}
+
+.about p {
+  color: #000000;
+  font-family: 'opensans-light';
+  font-weight: lighter;
+  font-size: 1rem;
+  line-height: 33px;
+  margin-top: -1vh;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  -webkit-order: 1;
+  -ms-order: 1;
+  order: 1;
+  padding-left: 3.75%;
+  padding-top: 3.75%;
+}
+
+.self {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-order: 2;
+  -ms-order: 2;
+  order: 2;
+  padding-top: 10vh;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.self img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 5px solid #16A085;
+  border-radius: 50%;
+}
+
+#verline {
+  height: calc(100vh - 250px - 5vh);
+  width: 4px;
+  background: #16A085;
+  transform: translate(50%);
+}
+
+.right {
+  display: flex;
+  text-align: right;
+  justify-content: center;
+  flex-direction: column;
+  -webkit-order: 3;
+  -ms-order: 3;
+  order: 3;
+  padding-right: 3.75%;
+  padding-top: 3.75%;
+  margin-left: 2%;
+}
+
+.progress {
+  height: 15px;
+  background: #6C7778;
+}
+
+.progress-bar {
+  height: 15px;
+  background: #D9D9D9;
+}
+
+.btn {
+  margin: 0 auto;
+  margin-top: 15%;
+  color: #F9B42D;
+  border: 1px solid #79A19A;
+  border-radius: 15px;
+  background: transparent;
+}
+
+.btn:hover, .dropbtn:focus {
+  background: #F9B42D;
+  color: white;
+}
+
+#one {
+  width: 10%;
+}
+
+#two {
+  width: 20%;
+}
+
+#three {
+  width: 40%
+}
+
+#four {
+  width: 30%;
+}
+
+/**
+* Gallery Section
+**/
+
+.gallery {
+  display: flex;
+  background: #36403E;
+}
+
+#gal {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gallery h2 {
+  text-transform: uppercase;
+  font-family: 'opensans-bold';
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 33px;
+  letter-spacing: 0.15em;
+  color: #F9B42D;
+}
+
+#image {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 100%;
+
+}
+
+#image img {
+  margin: 2.5% auto;
+  width: 75%;
+  height: auto;
+  object-fit: scale-down;
+}
+
+
+/**
+* Contact Section
+**/
+
+.half {
+  padding: 0;
+  display: flex;
+}
+
+.half h2 {
+  text-transform: uppercase;
+  font-family: 'opensans-bold';
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 33px;
+  letter-spacing: 0.15em;
+  color: #F9B42D;
+}
+
+#soc {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.25rem;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, .3);
+}
+
+#soc a {
+  margin: 0 1%;
+  color: black;
+}
+
+.title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #16A085;
+}
+
+/**
+* Projects Section
+**/
+
+#projname {
+  margin-top: 15%;
+  margin-bottom: 0;
+}
+
+#proj {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.projitem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100%;
+  border: 2px solid #16A085;
+}
+
+.projitem img {
+  width: 50%;
+}
+
+#empatnol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#empatnol img {
+  height: auto;
+  width: auto;
+}
+
+#nolempat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#nolempat h5 {
+  margin: 0;
+  font-family: 'opensans-light';
+  font-weight: lighter;
+  font-size: 2rem;
+  letter-spacing: 0.15em;
+  color: #FFFFFF;
+}
+
+#nolempat p {
+  margin: 0;
+  font-family: 'opensans-light';
+  font-weight: lighter;
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+  color: #FFFFFF;
+}
+
+.schedule h5 {
+  font-family: 'opensans-light';
+  font-weight: lighter;
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+}
+
+.schedule p {
+  font-family: 'opensans-light';
+  font-weight: lighter;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+}
+
+#sched {
+  border: 2px solid lightgrey;
+  height:100%;
+}
+
+
+/**
+* @media Responsive Settings
+**/
+
+@media (max-width: 1274.98px) {
+
+  .about h3 {
+    font-size: 1.05rem;
+  }
+
+  .about h4 {
+    font-size: 0.9rem;
+  }
+
+  .about p {
+    font-size: 0.8rem;
+  }
+
+}
+
+@media (max-width: 1199.98px) {
+
+  .about h3 {
+    font-size: 1rem;
+  }
+
+  .about h4 {
+    font-size: 0.85rem;
+  }
+
+  .about p {
+    font-size: 0.75rem;
+  }
+
+}
+
+@media (max-width: 991.98px) {
+
+  .about {
+    height: auto;
+  }
+
+  .left {
+    -webkit-order: 2;
+    -ms-order: 2;
+    order: 2;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .self {
+    padding-top: 2.5%;
+    -webkit-order: 1;
+    -ms-order: 1;
+    order: 1;
+    width: 100%;
+  }
+
+  #verline {
+    display: none;
+  }
+
+  .right {
+    -webkit-order: 3;
+    -ms-order: 3;
+    order: 3;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .right .btn {
+    margin: 25px auto;
+  }
+
+  .progress {
+    background: #D9D9D9;
+  }
+
+  .progress-bar {
+    background: #6C7778;
+  }
+
+  #one {
+    width: 90%
+  }
+
+  #two {
+    width: 80%;
+  }
+
+  #three {
+    width: 60%;
+  }
+
+  #four {
+    width: 70%;
+  }
+
+}
+
+@media (max-width: 767.98px) {
+
+  #image {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: auto;
+    max-width: 100%;
+  }
+
+  #image img {
+    height: 90%;
+  }
+
+  #proj {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: auto;
+    max-width: 100%;
+  }
+
+  .projitem {
+    height: 50%;
+  }
+
+  .projitem img {
+    width: 90%;
+    height: 90%;
+  }
+
+  .half {
+    justify-content: center;
+  }
+
+  #empatnol {
+    display: none;
+  }
+
+}
+
+@media (max-width: 575.98px) {
+
+  #intro h1 {
+    font-size: 1.5rem;
+    margin: -3% auto;
+  }
+
+  #intro span {
+    font-size: 0.6rem;
+  }
+
+  #arrow img {
+    width: 75%;
+  }
+
+  .schedule h5 {
+    font-size: 0.8rem;
+  }
+
+  .schedule p {
+    font-size: 0.7rem;
+  }
+
+  #sched {
+    height: 100%;
+    padding: 0;
+  }
+
+}

@@ -1,42 +1,123 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width"/>
-    <meta name="description" content="Get to Know Me - Alghifari Taufan Nugroho">
-    <title>Alghifari Taufan Nugroho</title>
-    <link type="text/css "rel="stylesheet" href="css/master.css">
-    <link type="text/css "rel="stylesheet" href="website-resume/css/font.css">
-  </head>
-  <body scroll="no" style="overflow: hidden">
-    <!-- Header -->
-    <div id="header-overlay">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Alghifari T N</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,500,600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/font.css">
+        <link type="image/png" rel="icon" href="img/icon.png" />
+    </head>
 
-      <nav id="nav-wrap">
-        <ul id="nav" class="nav">
-           <li class="current"><a href="#home">Home</a></li>
-           <li><a href="website-resume/index.html">Resume</a></li>
+  <body>
+        <header>
+            <!-- header-navbar
+                ====================================================================== -->
+            <div class="dropdown transparent">
+              <button onclick="navMenu()" class="dropbtn">Menu<img src="img/Dropdown.png"></button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="/">Home</a>
+                  <a href="#about">About</a>
+                  <a href="#gallery">Gallery</a>
+                  <a href="#contact">Contact</a>
+                  <a href="/website-resume">Resume</a>
+                </div>
+            </div>
+            <script src="js/dropdown.js"></script>
 
-        </ul>
-      </nav>
+        </header>
 
-      <div id="header" class="section">
-        <h1>Alghifari Taufan Nugroho</h1>
+        <!-- home
+        ====================================================================== -->
+        <section id="home" class="home container-fluid">
+          <div class="row" id="intro">
+            <div class="col-md">
+              <h1>Alghifari Taufan Nugroho</h1>
+              <span>Daydreamer</span>
+              <span>Imperfect</span>
+              <hr>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md" id="arrow">
+              <a href="#about" class="d-flex flex-column align-items-center"><img src="img/arrow.png"></a>
+            </div>
+          </div>
+        </section>
 
-        <div id="intro">
-          <span>Daydreamer</span>
-          <span>Imperfect</span>
+        <!-- about
+        ====================================================================== -->
+        <section id="about" class="about container-fluid flex-column flex-lg-row">
 
-          <hr>
+          <div class="self col col-xl-2">
+            <img src="img/self.jpg" alt="self">
+            <div id="verline"></div>
+          </div>
 
-          <ul class="social">
-             <li><a href="https://www.facebook.com/nvanonim"><i class="fa fa-facebook"></i></a></li>
-             <li><a href="https://twitter.com/FariTN_"><i class="fa fa-twitter"></i></a></li>
-             <li><a href="https://www.linkedin.com/in/alghifari-taufan-nugroho-a76ab0171/"><i class="fa fa-linkedin"></i></a></li>
-             <li><a href="https://www.instagram.com/faritn_/"><i class="fa fa-instagram"></i></a></li>
-             <li><a href="https://github.com/nvanonim"<i class="fa fa-github"></i></a></li>
-        </div>
-      </div>
-    </div>
-  </body>
+          <div class="col col-xl-5 left">
+            <h3>I'm <span style="color:#F9B42D;">Alghi</span>fari Taufan Nugroho</h3>
+            <p class="mb-4">Currently an Information System Student
+            that interested in photography. Would like
+            to learn Bussiness and Web Development</p>
+
+            <h4>FULLNAME</h4>
+            <p>Alghifari Taufan Nugroho</p>
+
+            <h4>BIRTH DATE</h4>
+            <p>May 16th, 2000</p>
+
+            <h4>CONTACT</h4>
+            <p>nvanon9@gmail.com</p>
+
+          </div>
+
+          <div class="col col-xl-5 right">
+            <h3>Skills</h3>
+
+            <h4>PHOTOGRAPHY</h4>
+            <div class="progress mb-2"><div class="progress-bar"></div></div>
+            <h4>PYTHON, JAVA</h4>
+            <div class="progress mb-2"><div class="progress-bar"></div></div>
+            <h4>ADOBE ILLUSTRATOR</h4>
+            <div class="progress mb-2"><div class="progress-bar"></div></div>
+            <h4>HTML, CSS</h4>
+            <div class="progress mb-2"><div class="progress-bar"></div></div>
+            <a class="btn btn-primary" role="button" href="https://www.linkedin.com/in/alghifari-taufan-nugroho-a76ab0171/" target="_blank">See More</a>
+          </div>
+
+        </section>
+
+        <!-- gallery
+        ====================================================================== -->
+        <section id="gallery" class="gallery container-fluid flex-column flex-md-row">
+          <div class="col-sm h-100" id="gal">
+            <h2>Gallery</h2>
+          </div>
+          <div class="col-sm h-100" id="image">
+            <img src="img/img1.jpg" alt="Image 1">
+            <img src="img/img2.JPG" alt="Image 2">
+            <img src="img/img3.jpg" alt="Image 3">
+          </div>
+        </section>
+
+        <!-- contact
+        ====================================================================== -->
+        <section id="contact" class="half container-fluid flex-column flex-md-row">
+          <div class="col-sm title h-100">
+            <h2>Contact</h2>
+          </div>
+          <div class="col-sm h-100" id="soc">
+            <a target="_blank" href="https://twitter.com/FariTN_"><i class="fa fa-twitter"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/alghifari-taufan-nugroho-a76ab0171/"><i class="fa fa-linkedin"></i></a>
+            <a target="_blank" href="https://www.instagram.com/faritn_/"><i class="fa fa-instagram"></i></a>
+            <a target="_blank" href="https://github.com/nvanonim"><i class="fa fa-github"></i></a>
+          </div>
+        </section>
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
 </html>
